@@ -25,10 +25,18 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Update to a recent version -->
+                <configuration>
+                    <source>1.8</source> <!-- Specify Java source version -->
+                    <target>1.8</target> <!-- Specify Java target version -->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
             </plugin>
         </plugins>
     </build>
 </project>
-
